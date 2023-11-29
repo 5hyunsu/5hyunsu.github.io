@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="resources/css/01.style.css" rel="stylesheet">
+        2023/11/27 버전 
+        <title> 타이틀 </title>
+        <br>
+   
+
+    </head>
+<body>
+<style>
+
+    #inner {
+        color : aquamarine
+    }
+
+    #full {
+        width:600px;
+        height:600px;
+        background-color: antiquewhite;
+    }
+
+    #screen_left {
+        width: 200px;
+        height: 600px;
+        background-color: cadetblue;
+
+    }
+    #screen_left-1 {
+        width: 200px;
+        height: 400px;
+        background-color: cadetblue;
+
+    }
+   
+    #screen_left-2 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(118, 95, 160);
+
+    }
+    #screen_right {
+        width: 400px;
+        height: 600px;
+        background-color: blue;
+        float: left;
+    }
+</style>
+    
+    <h2 id="inner">인라인 스타일 방식</h2>
+    <p>태그 선택자 이용 </p>
+    <!--태그선택자-->
+    <style>
+        p {color:hotpink}
+    </style>
+
+    <!--아이디선택자-->
+    <h4 id="id1">아이디선택자 이용</h4>
+    <style>
+        #id1{
+            color : blue;
+        }
+    </style>
+    <!--5.클래스 선택자-->
+    <li class="class1">클래스 선택자 이용</li>
+    <h2>클래스 선택자는 . 점을 찍어서 표시해서 사용한다 </h2>
+    <style>
+        .class1 {font-size: 15px;}
+    </style>
+ 
+    <input type="checkbox" id="name" name="apple">
+    <label for="apple">사과 </label> 
+    
+    <pre>
+    선택자[속성=속성값] { 스타일 속성: 값} 특정 값을 단어로 포함하는 태그선택 띄어쓰기로 구분
+    선택자[속성~=속성값] {스타일 속성: 값} 특정 값을 단어로 포함하는 태그 선택 "-"으로 구분 -앞의  내용이 동일
+    선택자[속성!=속성값] {스타일 속성: 값} 
+    선택자[속성^=속성값] {스타일 속성: 값}
+    선택자[속성$=속성값] {스타일 속성: 값}
+    선택자[속성*=속성값] {스타일 속성: 값}
+    </pre>
+
+    <div id="header">
+        <h2 style="background-color:lightgrey; color:white; text-align:center">웹페이지 만들기</h2>
+    </div>
+
+    <div id="nav">
+        <h2 style="background-color:lightgrey; color:white; text-align:center">로그인 화면 만들기</h2>
+    </div>
+
+    <div id="section" style="text-align: center;">
+        <span style="background-color:lightgrey; color:white; text-align:center"><input type="submit" value="로그인" onClick="location.href='01.join.html'"> ></span>
+        <span style="background-color:lightgrey; color:white; text-align:center">로그아웃</span>
+        <span style="background-color:lightgrey; color:white; text-align:center">회원정보</span>
+        <span style="background-color:lightgrey; color:white; text-align:center">장바구니</span>
+    </div><br>
+
+    <!--<iframe src="01.join.html" style="width:100%; height:600px; border: 3px dashed maroon"></iframe>  -->
+
+    <div id="footer">
+
+
+	<h2>Footer 영역 : Banner</h2>
+    </div>
+
+
+
+    <header>
+        <h1>제목</h1>
+        <nav> 
+            <ul>
+                <li>home</li>
+                <li>게시판</li>
+                <li>방명록</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <article>"컨텐츠 내용"</article>
+        <article>"컨텐츠 내용"</article>
+    </section>
+<h1>Hello World</h1>
+<p>I'm hosted with GitHub Pages.</p>
+<p> 깃허브 </p>
+<p>테스트 페이지 입니다. </p>
+<h1> 제목 부분입니다.</h1>
+<h1> 테스트 부분입니다.</h1>
+<h1> 테스트 부분2입니다.</h1>
+<frameset cols="20%,"80%">
+<frame src="a.html">
+<frame src="b.html">
+</frameset>
+
+<div id="full">
+    <div id="screen_left-1">왼쪽 부분</div>
+    <div id="screen_left-2">왼쪽 2번째 </div>
+</div>
+    <div id="screen_right">메인 부분 </div>
+
+
+<img src="resources/img/book1.jpg">
+
+<footer>
+    바닥 footer
+</footer>
+</body>
+</html>
